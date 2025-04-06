@@ -5,5 +5,13 @@ from django.http import HttpResponse
 
 # A view function is a Python function that takes a web request and returns a web response.
 
+# def calculate():
+#   x = 1
+#   y = 2
+#   return x
+
 def say_hello(request):
+  # x = calculate()
+  x = 1
+  y = 2
   return render(request, 'hello.html', {'name': 'Teddy'})
