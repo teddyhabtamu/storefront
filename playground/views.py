@@ -6,4 +6,4 @@ from django.http import HttpResponse
 # A view function is a Python function that takes a web request and returns a web response.
 
 def say_hello(request):
-  return HttpResponse("Hello, world!")
+  return render(request, 'hello.html', {'name': 'Teddy'})
